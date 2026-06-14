@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Press — Pana Mind Press</title>
+<meta name="description" content="About Pana Mind Press, an independent publisher of books on attention, consciousness, Buddhist thought, and the contemplative life.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Press — Pana Mind Press">
+<link rel="canonical" href="/about.html">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="name">Pana Mind Press</span>
+      <span class="kicker">Independent Publisher</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="main" aria-label="Primary">
+      <a href="index.html">Catalogue</a>
+      <a href="about.html" aria-current="page">The Press</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:3rem">
+    <div class="wrap">
+      <p class="eyebrow">About the imprint</p>
+      <h1>The Press</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="prose">
+        <p>Pana Mind Press is a small independent publisher devoted to a single, broad subject: the life of the mind paid close attention to.</p>
+
+        <p>Our list gathers books that take the inner life seriously &mdash; whether through the disciplined first-hand record of contemplative practice, the careful scholarship of the Buddhist textual traditions, or fiction that treats consciousness and transformation as worthy of a story&rsquo;s full weight. We publish across these lines because we believe they illuminate one another: the practitioner&rsquo;s account, the scholar&rsquo;s map, and the novelist&rsquo;s imagination are three approaches to the same territory.</p>
+
+        <h2>What we look for</h2>
+        <p>Clarity over jargon. Honesty over hype. Work that respects the reader&rsquo;s intelligence and the seriousness of its subject &mdash; books a thoughtful person could return to more than once.</p>
+
+        <p>We keep the press deliberately small. Each title is chosen, edited, and produced with care rather than churned to a schedule, and we&rsquo;d rather publish a few books well than many books quickly.</p>
+
+        <h2>Where to find the books</h2>
+        <p>Every title in the <a href="index.html">catalogue</a> is available through Amazon in digital and print editions, with selected titles in hardcover and in translation. For rights, review copies, or other enquiries, please <a href="contact.html">get in touch</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="colophon-mark">Pana Mind Press</span>
+    <nav aria-label="Footer">
+      <a href="index.html">Catalogue</a>
+      <a href="about.html">The Press</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="legal">&copy; <span id="yr"></span> Pana Mind Press. All rights reserved. Published in Ballina, New South Wales, Australia.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var t = document.querySelector('.nav-toggle'), n = document.querySelector('nav.main');
+  t && t.addEventListener('click', function(){ var o = n.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+</script>
+
+</body>
+</html>

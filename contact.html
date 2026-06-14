@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Pana Mind Press</title>
+<meta name="description" content="Contact Pana Mind Press for rights, review copies, and general enquiries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Pana Mind Press">
+<link rel="canonical" href="/contact.html">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="name">Pana Mind Press</span>
+      <span class="kicker">Independent Publisher</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav class="main" aria-label="Primary">
+      <a href="index.html">Catalogue</a>
+      <a href="about.html">The Press</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:3rem">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="prose">
+        <p>For rights enquiries, review copies, permissions, or any other correspondence, the press can be reached by email.</p>
+        <p><a href="mailto:hello@panamindpress.com">hello@panamindpress.com</a></p>
+
+        <h2>For readers</h2>
+        <p>Questions about a particular book are always welcome. If you&rsquo;d like word of new and forthcoming titles, you can join the mailing list from the <a href="index.html#catalogue">catalogue page</a>.</p>
+
+        <h2>For booksellers &amp; reviewers</h2>
+        <p>We&rsquo;re glad to arrange review copies and to discuss trade terms. Please write to the address above with a note about your outlet or publication.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="colophon-mark">Pana Mind Press</span>
+    <nav aria-label="Footer">
+      <a href="index.html">Catalogue</a>
+      <a href="about.html">The Press</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="legal">&copy; <span id="yr"></span> Pana Mind Press. All rights reserved. Published in Ballina, New South Wales, Australia.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var t = document.querySelector('.nav-toggle'), n = document.querySelector('nav.main');
+  t && t.addEventListener('click', function(){ var o = n.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+</script>
+
+</body>
+</html>

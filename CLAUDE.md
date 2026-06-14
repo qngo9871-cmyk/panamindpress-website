@@ -42,6 +42,15 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-06-15, later)
+- Readability pass: darkened the three ink tones (final --ink #141209, --ink-soft #2b2920,
+  --ink-faint #312e23) and bolded the small uppercase labels (kicker/eyebrows/colophon/section
+  nums/bylines -> font-weight 600, tighter tracking). The faint #8b8678 labels were unreadable.
+- Amazon ratings updated on catalogue cards: 43 Days of Fire 4.6 (31), The Recognition 4.6 (26),
+  Morning Coffee 5.0 (2), Blood & Leaves 5.0 (3), The Dreaming Mind 5.0 (1),
+  Learning to Pay Attention 5.0 (1). Notes from the Cushion already 5.0 (1).
+  Between Sets + Night as Path have no reviews yet (no rating shown). All pushed + live.
+
 ## Current State (2026-06-15)
 - 9th book added — Quinn Path, "Notes from the Cushion and the Kitchen Table" (Kindle $4.99 /
   Paperback $13.99), cover at covers/notes-from-the-cushion.jpg (RGB 776x1200).

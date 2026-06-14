@@ -44,15 +44,19 @@ At the end of every session, update this Current State section to reflect progre
 
 ## Current State (2026-06-14)
 - Scaffold unzipped to /Users/user/Pana Mind Press Website/ (home folder, not iCloud).
-- Quinn Path: 4 books COMPLETE — covers copied from Quinn Path Website into covers/
-  (forty-three-days, between-sets, learning-to-pay-attention, morning-coffee), prices + Amazon links live.
-- Quyen Ngo (The Dreaming Mind, The Night as Path): titles/bylines/buy links wired;
-  covers + prices still PENDING (placeholders + TODO in index.html).
-- Sage Kane (The Recognition, Blood & Leaves): titles/bylines wired; covers, prices,
-  and the 2 Amazon product URLs still PENDING (buy link points to author page; TODO in index.html).
-- Contact email set to hello@panamindpress.com (set up Cloudflare Email Routing to receive it).
+- ALL 8 covers live as <img> (no placeholders left):
+  - Quinn Path: forty-three-days, between-sets, learning-to-pay-attention, morning-coffee
+    (copied from Quinn Path Website) — prices + Amazon links complete.
+  - Quyen Ngo: dreaming-mind, night-as-path (covers from Downloads); prices still PENDING.
+  - Sage Kane: the-recognition (Downloads), blood-and-leaves (Desktop Kindle cover);
+    prices + 2 Amazon product URLs still PENDING (buy link points to author page).
+- Contact email set to hello@panamindpress.com (still need Cloudflare Email Routing to receive it).
 - Domain: CNAME, sitemap.xml, robots.txt all use panamindpress.com.
-- Deployed: GitHub repo qngo9871-cmyk/panamindpress-website, Pages from branch root, CNAME live.
-- REMAINING for Q: Cloudflare DNS (apex A records 185.199.108-111.153 + www CNAME to
-  qngo9871-cmyk.github.io, all DNS-only/grey-cloud), then enable Enforce HTTPS in Pages settings.
-  Supply: 4 covers, 4 prices, 2 Sage Kane URLs.
+- Deployed: GitHub repo qngo9871-cmyk/panamindpress-website, Pages from main/root, CNAME live.
+- DNS DONE via Cloudflare API (token saved at ~/.cloudflare/panamindpress-dns.token, chmod 600,
+  zone a58c37d3cc90fbe26000e02b90bb7afd): 4 apex A (185.199.108-111.153) + www CNAME to
+  qngo9871-cmyk.github.io, all DNS-only. Resolves correctly via 1.1.1.1.
+- Enforce HTTPS: PENDING GitHub cert issuance (auto, mins–1hr after DNS). Background poller
+  flips it on once cert exists. If not done, run: gh api -X PUT repos/qngo9871-cmyk/panamindpress-website/pages -F https_enforced=true
+- REMAINING for Q: supply 4 prices (Dreaming Mind, Night as Path, The Recognition, Blood & Leaves)
+  + 2 Sage Kane Amazon product URLs; set up Cloudflare Email Routing for hello@panamindpress.com.

@@ -18,7 +18,7 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 - CNAME set to panamindpress.com (registered at Cloudflare)
 
 ## Structure
-- index.html      -- imprint hero + full catalogue (3 lines, 8 books)
+- index.html      -- imprint hero + full catalogue (3 lines, 9 books)
 - about.html      -- about the press (imprint only, no authors)
 - contact.html    -- single imprint contact address
 - css/style.css   -- house style (intentionally NOT the Quinn Path look)
@@ -41,6 +41,20 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
+
+## Current State (2026-06-15)
+- 9th book added — Quinn Path, "Notes from the Cushion and the Kitchen Table" (Kindle $4.99 /
+  Paperback $13.99), cover at covers/notes-from-the-cushion.jpg (RGB 776x1200).
+- Newsletter migrated Web3Forms -> MailerLite. Subscribe form posts client-side to MailerLite
+  jsonp endpoint (account 1967807 "Sage Kane", form 190283260541011131, group "Pana Mind Press",
+  double opt-in ON). Sending domain panamindpress.com authenticated (DKIM CNAME + merged SPF +
+  verification TXT + DMARC, all in Cloudflare). Welcome automation live; sender + account company
+  name set to "Pana Mind Press" <hello@panamindpress.com> (never Sage Kane — pen-name rule).
+  Quinn Path uses a SEPARATE MailerLite account (2211845). API key: ~/.mailerlite/api.token.
+- Availability: about.html + catalogue note say ebooks are also on Apple Books/Kobo/B&N/etc.;
+  every catalogue card has a per-book "Also on Apple Books, Kobo & more" Books2Read link
+  (books2read.com/u/CODE, ebooks wide via Draft2Digital). Codes verified live in index.html.
+- Outstanding: NOTHING.
 
 ## Current State (2026-06-14)
 - Scaffold unzipped to /Users/user/Pana Mind Press Website/ (home folder, not iCloud).

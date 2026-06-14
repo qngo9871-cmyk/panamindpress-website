@@ -44,19 +44,26 @@ At the end of every session, update this Current State section to reflect progre
 
 ## Current State (2026-06-14)
 - Scaffold unzipped to /Users/user/Pana Mind Press Website/ (home folder, not iCloud).
-- ALL 8 covers live as <img> (no placeholders left):
-  - Quinn Path: forty-three-days, between-sets, learning-to-pay-attention, morning-coffee
-    (copied from Quinn Path Website) — prices + Amazon links complete.
-  - Quyen Ngo: dreaming-mind, night-as-path (covers from Downloads); prices still PENDING.
-  - Sage Kane: the-recognition (Downloads), blood-and-leaves (Desktop Kindle cover);
-    prices + 2 Amazon product URLs still PENDING (buy link points to author page).
+- CATALOGUE COMPLETE — all 8 books have cover + USD price + real Amazon product link:
+  - Quinn Path: forty-three-days, between-sets, learning-to-pay-attention, morning-coffee.
+  - Quyen Ngo: dreaming-mind ($7.99), night-as-path ($7.99).
+  - Sage Kane: the-recognition ($4.99), blood-and-leaves ($2.99) — product links wired.
+- REDESIGN (2026-06-14): rebuilt css/style.css as a cover-forward literary house style —
+  large covers in a centered flex gallery, Fraunces (display) + Spectral (body) + Inter
+  (labels) via Google Fonts (links in all 3 HTML heads), stronger line dividers, refined
+  hero/footer, hover states, responsive 3-up/2-up. Covers use object-fit:cover @2/3.
+  NOTE: morning-coffee.jpg is near-square (1025x1200) so it crops at the sides in the 2/3
+  frame — acceptable but a true 2:3 cover would sit better.
+- COVERS OPTIMIZED via Pillow: all -> RGB, max 1200px, q80, stripped metadata, progressive.
+  Total 7.5MB -> 1.2MB. morning-coffee was CMYK+ICC (wrong colors in some browsers) -> RGB.
 - Contact email set to hello@panamindpress.com (still need Cloudflare Email Routing to receive it).
 - Domain: CNAME, sitemap.xml, robots.txt all use panamindpress.com.
 - Deployed: GitHub repo qngo9871-cmyk/panamindpress-website, Pages from main/root, CNAME live.
+  Live over http://panamindpress.com (www -> apex).
 - DNS DONE via Cloudflare API (token saved at ~/.cloudflare/panamindpress-dns.token, chmod 600,
   zone a58c37d3cc90fbe26000e02b90bb7afd): 4 apex A (185.199.108-111.153) + www CNAME to
   qngo9871-cmyk.github.io, all DNS-only. Resolves correctly via 1.1.1.1.
 - Enforce HTTPS: PENDING GitHub cert issuance (auto, mins–1hr after DNS). Background poller
   flips it on once cert exists. If not done, run: gh api -X PUT repos/qngo9871-cmyk/panamindpress-website/pages -F https_enforced=true
-- REMAINING for Q: supply 4 prices (Dreaming Mind, Night as Path, The Recognition, Blood & Leaves)
-  + 2 Sage Kane Amazon product URLs; set up Cloudflare Email Routing for hello@panamindpress.com.
+- REMAINING for Q: set up Cloudflare Email Routing for hello@panamindpress.com.
+  Optional: source a true 2:3 morning-coffee cover.

@@ -162,8 +162,12 @@
       <p class="eyebrow">From the Press</p>
       <h2>News from Pana Mind Press</h2>
       <p>Occasional word on new titles and forthcoming books. No noise, no selling — only what&rsquo;s worth your attention.</p>
-      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you';">
-        <input type="email" placeholder="Your email address" aria-label="Email address" required>
+      <form id="subscribe">
+        <input type="hidden" name="access_key" value="6c3c9a9b-2769-4ecd-a499-b7f201ccd25f">
+        <input type="hidden" name="subject" value="New Pana Mind Press subscriber">
+        <input type="hidden" name="from_name" value="Pana Mind Press — Subscribe">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+        <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
         <button type="submit">Subscribe</button>
       </form>
       <small>We never share your address. Unsubscribe anytime.</small>
@@ -188,6 +192,17 @@
   document.getElementById('yr').textContent = new Date().getFullYear();
   var t = document.querySelector('.nav-toggle'), n = document.querySelector('nav.main');
   t && t.addEventListener('click', function(){ var o = n.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+
+  var sf = document.getElementById('subscribe');
+  if (sf) sf.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = sf.querySelector('button');
+    btn.disabled = true; btn.textContent = 'Subscribing…';
+    fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(sf) })
+      .then(function(r){ return r.json(); })
+      .then(function(j){ if (j.success) { sf.reset(); btn.textContent = 'Thank you'; } else { btn.disabled = false; btn.textContent = 'Try again'; } })
+      .catch(function(){ btn.disabled = false; btn.textContent = 'Try again'; });
+  });
 </script>
 
 </body>

@@ -63,7 +63,7 @@ At the end of every session, update this Current State section to reflect progre
 - DNS DONE via Cloudflare API (token saved at ~/.cloudflare/panamindpress-dns.token, chmod 600,
   zone a58c37d3cc90fbe26000e02b90bb7afd): 4 apex A (185.199.108-111.153) + www CNAME to
   qngo9871-cmyk.github.io, all DNS-only. Resolves correctly via 1.1.1.1.
-- Enforce HTTPS: PENDING GitHub cert issuance (auto, mins–1hr after DNS). Background poller
-  flips it on once cert exists. If not done, run: gh api -X PUT repos/qngo9871-cmyk/panamindpress-website/pages -F https_enforced=true
-- REMAINING for Q: set up Cloudflare Email Routing for hello@panamindpress.com.
-  Optional: source a true 2:3 morning-coffee cover.
+- HTTPS LIVE: cert issued (after a domain remove/re-add nudge — it had stalled ~2h); Enforce HTTPS ON.
+  https://panamindpress.com (200), http -> 301 https, www -> apex.
+- Subscribe form: WIRED to Web3Forms (key in index.html), notifications -> hello@/Gmail; WORKING.
+- Email Routing LIVE (hello@ -> Gmail). Morning-coffee cover fixed (2:3). NOTHING outstanding.

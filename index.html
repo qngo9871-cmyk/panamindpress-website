@@ -175,11 +175,9 @@
       <h2>News from Pana Mind Press</h2>
       <p>Occasional word on new titles and forthcoming books. No noise, no selling — only what&rsquo;s worth your attention.</p>
       <form id="subscribe">
-        <input type="hidden" name="access_key" value="6c3c9a9b-2769-4ecd-a499-b7f201ccd25f">
-        <input type="hidden" name="subject" value="New Pana Mind Press subscriber">
-        <input type="hidden" name="from_name" value="Pana Mind Press — Subscribe">
-        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
-        <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
+        <input type="hidden" name="ml-submit" value="1">
+        <input type="hidden" name="anticsrf" value="true">
+        <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" required>
         <button type="submit">Subscribe</button>
       </form>
       <p id="subscribe-msg" class="form-msg" role="status" aria-live="polite"></p>
@@ -215,11 +213,11 @@
       var btn = sf.querySelector('button');
       btn.disabled = true; btn.textContent = 'Subscribing…';
       setMsg('', '');
-      fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(sf) })
+      fetch('https://assets.mailerlite.com/jsonp/1967807/forms/190283260541011131/subscribe', { method: 'POST', headers: { 'X-Requested-With': 'XMLHttpRequest' }, body: new FormData(sf) })
         .then(function(r){ return r.json(); })
         .then(function(j){
           btn.disabled = false; btn.textContent = 'Subscribe';
-          if (j.success) { sf.reset(); setMsg('Thank you — you’re on the list. We’ll write only when there’s a new title worth your attention.', 'ok'); }
+          if (j.success) { sf.reset(); setMsg('Almost there — please check your inbox and click the confirmation link to complete your subscription.', 'ok'); }
           else { setMsg('Sorry, something went wrong. Please try again.', 'err'); }
         })
         .catch(function(){ btn.disabled = false; btn.textContent = 'Subscribe'; setMsg('Couldn’t reach the server. Please try again.', 'err'); });

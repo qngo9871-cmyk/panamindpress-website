@@ -170,6 +170,7 @@
         <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
         <button type="submit">Subscribe</button>
       </form>
+      <p id="subscribe-msg" class="form-msg" role="status" aria-live="polite"></p>
       <small>We never share your address. Unsubscribe anytime.</small>
     </div>
   </div>
@@ -194,14 +195,24 @@
   t && t.addEventListener('click', function(){ var o = n.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
 
   var sf = document.getElementById('subscribe');
-  if (sf) sf.addEventListener('submit', function(e){
-    e.preventDefault();
-    var btn = sf.querySelector('button');
-    btn.disabled = true; btn.textContent = 'Subscribing…';
-    fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(sf) })
-      .then(function(r){ return r.json(); })
-      .then(function(j){ if (j.success) { sf.reset(); btn.textContent = 'Thank you'; } else { btn.disabled = false; btn.textContent = 'Try again'; } })
-      .catch(function(){ btn.disabled = false; btn.textContent = 'Try again'; });
+  if (sf) {
+    var msg = document.getElementById('subscribe-msg');
+    var setMsg = function(text, kind){ if (msg) { msg.textContent = text; msg.className = 'form-msg' + (kind ? ' ' + kind : ''); } };
+    sf.addEventListener('submit', function(e){
+      e.preventDefault();
+      var btn = sf.querySelector('button');
+      btn.disabled = true; btn.textContent = 'Subscribing…';
+      setMsg('', '');
+      fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(sf) })
+        .then(function(r){ return r.json(); })
+        .then(function(j){
+          btn.disabled = false; btn.textContent = 'Subscribe';
+          if (j.success) { sf.reset(); setMsg('Thank you — you’re on the list. We’ll write only when there’s a new title worth your attention.', 'ok'); }
+          else { setMsg('Sorry, something went wrong. Please try again.', 'err'); }
+        })
+        .catch(function(){ btn.disabled = false; btn.textContent = 'Subscribe'; setMsg('Couldn’t reach the server. Please try again.', 'err'); });
+    });
+  }
   });
 </script>
 

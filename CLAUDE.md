@@ -65,5 +65,9 @@ At the end of every session, update this Current State section to reflect progre
   qngo9871-cmyk.github.io, all DNS-only. Resolves correctly via 1.1.1.1.
 - HTTPS LIVE: cert issued (after a domain remove/re-add nudge — it had stalled ~2h); Enforce HTTPS ON.
   https://panamindpress.com (200), http -> 301 https, www -> apex.
-- Subscribe form: WIRED to Web3Forms (key in index.html), notifications -> hello@/Gmail; WORKING.
-- Email Routing LIVE (hello@ -> Gmail). Morning-coffee cover fixed (2:3). NOTHING outstanding.
+- Subscribe form: Web3Forms (client-side FormData fetch + honeypot, key in index.html);
+  shows in-page confirmation/error message under the form; notifications -> hello@/Gmail. WORKING + verified.
+  (Inline <script> must stay valid JS — a stray }); once broke it and made the form do a default
+  submit/page-jump; node --check the script before shipping.)
+- Email Routing LIVE (hello@ -> Gmail). Morning-coffee cover fixed (2:3).
+- HTTPS verified: Let's Encrypt cert approved, https_enforced=true, http->https. NOTHING outstanding.

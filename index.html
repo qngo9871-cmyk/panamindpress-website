@@ -189,9 +189,8 @@
       <h2>News from Pana Mind Press</h2>
       <p>Occasional word on new titles and forthcoming books. No noise, no selling — only what&rsquo;s worth your attention.</p>
       <form id="subscribe">
-        <input type="hidden" name="ml-submit" value="1">
-        <input type="hidden" name="anticsrf" value="true">
-        <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" required>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+        <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
         <button type="submit">Subscribe</button>
       </form>
       <p id="subscribe-msg" class="form-msg" role="status" aria-live="polite"></p>
@@ -227,11 +226,11 @@
       var btn = sf.querySelector('button');
       btn.disabled = true; btn.textContent = 'Subscribing…';
       setMsg('', '');
-      fetch('https://assets.mailerlite.com/jsonp/1967807/forms/190283260541011131/subscribe', { method: 'POST', headers: { 'X-Requested-With': 'XMLHttpRequest' }, body: new FormData(sf) })
+      fetch('https://pmp-subscribe.qngo9871.workers.dev', { method: 'POST', body: new FormData(sf) })
         .then(function(r){ return r.json(); })
         .then(function(j){
           btn.disabled = false; btn.textContent = 'Subscribe';
-          if (j.success) { sf.reset(); setMsg('Almost there — please check your inbox and click the confirmation link to complete your subscription.', 'ok'); }
+          if (j.success) { sf.reset(); setMsg('You’re subscribed — thank you. A welcome note is on its way to your inbox.', 'ok'); }
           else { setMsg('Sorry, something went wrong. Please try again.', 'err'); }
         })
         .catch(function(){ btn.disabled = false; btn.textContent = 'Subscribe'; setMsg('Couldn’t reach the server. Please try again.', 'err'); });

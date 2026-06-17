@@ -42,6 +42,17 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-06-17)
+- SUBSCRIBE FORM FIX: the form no longer posts to the MailerLite jsonp endpoint. That endpoint
+  forced double opt-in (baked into the form, unchangeable via API or the new UI) and its
+  confirmation emails were never delivered, so signups died silently. The form now POSTs (multipart,
+  field `email` + `website` honeypot) to a Cloudflare Worker `pmp-subscribe`
+  (https://pmp-subscribe.qngo9871.workers.dev), which calls the MailerLite API to add the subscriber
+  as `active` to the "Pana Mind Press" group — welcome automation fires immediately, no confirmation
+  step. Worker source + deploy.sh live in /Users/user/panamindpress-subscribe-worker/ (not in this
+  repo). ML key is the Worker's `ML_TOKEN` secret. CF deploy token: ~/.cloudflare/panamindpress-workers.token.
+  Success copy updated to "You're subscribed…". Verified end-to-end (active signup + welcome email).
+
 ## Current State (2026-06-15, later)
 - Readability pass: darkened the three ink tones (final --ink #141209, --ink-soft #2b2920,
   --ink-faint #312e23) and bolded the small uppercase labels (kicker/eyebrows/colophon/section

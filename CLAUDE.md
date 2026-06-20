@@ -42,6 +42,26 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-06-20)
+- 10th book added — Quyen Ngo, "Way of Insight" (Buddhist Studies line). Kindle $3.99
+  (ebook; paperback price TBD), Amazon ASIN B0H656DTQJ. Cover covers/way-of-insight.jpg.
+  No reviews yet so no star rating shown. NO Books2Read/D2D link yet — the card has an
+  INVISIBLE buy-alt placeholder (`<span class="buy-alt" ... visibility:hidden>`) reserving
+  the "Also on Apple Books, Kobo & more" line so the Buy button aligns; swap it for the
+  real `<a>` once the D2D universal page exists (TODO comment is on the card in index.html).
+- ALL 10 COVERS NORMALIZED to 776x1200. Previously off-standard: way-of-insight (749),
+  morning-coffee (811 — the old "1025x1200 near-square" note is now STALE), the-recognition
+  (847), blood-and-leaves (847). Off-standard aspect ratios render at different heights in a
+  row (the CSS frame's aspect-ratio:2/3 acts as a floor, not a hard clip — narrower covers
+  overflow taller, wider ones stay shorter), which made rows look uneven. Fixed by trimming
+  side margins to 776x1200 (center-crop, no title text lost). RULE: every new cover must be
+  exactly 776x1200 or it will be uneven next to the others.
+- CSS alignment reserves (css/style.css): `.book .sub { min-height: 4.1rem }` (3 lines) and
+  `.book h3 { min-height: 2.36em }` (2 lines) so bylines/prices/buttons line up across a row
+  regardless of how many lines each title/subtitle wraps to. Buy button uses margin-top:auto
+  (bottom-anchored), so every card needs a buy-alt line (real or the hidden placeholder).
+- Verified even via headless Chrome render + per-column text-row measurement (all 3 rows).
+
 ## Current State (2026-06-17)
 - SUBSCRIBE FORM FIX: the form no longer posts to the MailerLite jsonp endpoint. That endpoint
   forced double opt-in (baked into the form, unchangeable via API or the new UI) and its

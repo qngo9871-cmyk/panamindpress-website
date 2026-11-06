@@ -42,6 +42,14 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-11-07)
+- Secondary store link is now a BOXED BUTTON matching "Buy on Amazon" (people ignored the old
+  underlined text link). Label shortened to "Apple Books, Kobo & more" (uppercase via CSS). Styles
+  are in the inline <style> in index.html (`.book .buy-alt`); at <=640px both buttons stretch to
+  card width, centered, tighter tracking (2-up phone grid wraps the long label to 2 even lines).
+  Way of Insight still has the hidden placeholder span (same class) so row alignment holds.
+  Verified via headless Chrome render at 1300px and true 390px (iframe).
+
 ## Current State (2026-11-06)
 - SUBSCRIBE OUTAGE FIXED: every signup failed ("Sorry, something went wrong") because the Sage Kane
   MailerLite account (login sagekane772@gmail.com, account name "Pana Mind Press") had 482 active

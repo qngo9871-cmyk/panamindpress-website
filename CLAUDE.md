@@ -51,6 +51,10 @@ At the end of every session, update this Current State section to reflect progre
   of them to Unsubscribed (kept as records, not deleted) -> 0 active. Re-tested via the Worker:
   success:true, test address active. NOTE: the Quinn Path ML account (qngo9871@gmail.com login) is
   NOT the one the site uses. If signups fail again, check Plan usage in the Sage Kane account first.
+- Welcome automation verified same day: fresh address (Gmail +alias) got "Welcome to Pana Mind Press"
+  5s after signup and it arrived in Gmail; test address then unsubscribed. GOTCHA: re-subscribing an
+  EXISTING address only restores it (no group re-join) so the welcome email does NOT re-send — always
+  test with a brand-new address. Active subscribers now 1 (qngo8@yahoo.com) of 250.
 
 ## Current State (2026-06-20)
 - 10th book added — Quyen Ngo, "Way of Insight" (Buddhist Studies line). Kindle $3.99

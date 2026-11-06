@@ -42,6 +42,16 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-11-06)
+- SUBSCRIBE OUTAGE FIXED: every signup failed ("Sorry, something went wrong") because the Sage Kane
+  MailerLite account (login sagekane772@gmail.com, account name "Pana Mind Press") had 482 active
+  subscribers vs the FREE PLAN LIMIT OF 250 (ML lowered it). ML API returned 413 "might exceed the
+  current subscriber limit"; the Worker relays that as success:false. All 482 came from one CSV
+  import on 2025-12-07 (scraped business list, never emailed, none from the website). Bulk-moved all
+  of them to Unsubscribed (kept as records, not deleted) -> 0 active. Re-tested via the Worker:
+  success:true, test address active. NOTE: the Quinn Path ML account (qngo9871@gmail.com login) is
+  NOT the one the site uses. If signups fail again, check Plan usage in the Sage Kane account first.
+
 ## Current State (2026-06-20)
 - 10th book added — Quyen Ngo, "Way of Insight" (Buddhist Studies line). Kindle $3.99
   (ebook; paperback price TBD), Amazon ASIN B0H656DTQJ. Cover covers/way-of-insight.jpg.

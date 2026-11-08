@@ -46,7 +46,7 @@ At the end of every session, update this Current State section to reflect progre
 - DIRECT EBOOK SALES via Payhip (account qngo9871@gmail.com, store "Pana Mind Press", checkout
   connected). All 10 books are Payhip digital products: EPUB (from ~/Books Published final Kindle
   folders) + cover + description + "Send to Kindle" note, "Product is an ebook" (reduced EU VAT) on,
-  price = Kindle price (KDP list-price parity: never cheaper here than Kindle). None are in KDP Select.
+  price = Kindle price EXCEPT 43 Days: Q set Payhip US$5.99 on 11-08 while Kindle is $8.99 (KDP price-match risk accepted). None are in KDP Select.
   Product codes: 43 Days cx0Rg, Between Sets jR45K, Learning to Pay Attention 87ByN, Morning Coffee
   ePg9v, Notes from the Cushion GEh1T, Dreaming Mind nF2WO, Night as Path zjgF0, Way of Insight
   SEnm9, The Recognition 18rlI, Blood & Leaves SYjw4 (https://payhip.com/b/<code>).

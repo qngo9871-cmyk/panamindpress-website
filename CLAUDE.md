@@ -54,6 +54,11 @@ At the end of every session, update this Current State section to reflect progre
   quiet "Or buy from ..." text line (`.book .buy-direct` / `.book .also`, inline <style>). Catalogue
   intro line now pitches direct EPUB purchase; print is Amazon-only. If a price changes on KDP,
   change it in Payhip AND the button label here.
+- Payhip store About section (2026-11-09): heading "About the Press", text = shortened about.html,
+  photo = brand/pana-mind-press-logo.png (800x800 wordmark render; the site has no image logo).
+  Regenerate from brand/logo-source.html with headless Chrome (--window-size=800,800 --screenshot).
+  Edit in Payhip store builder -> About Me section; set image via Replace -> picker -> "Choose this
+  image" (closing the picker with X reverts it), then Save Changes + Publish.
 
 ## Current State (2026-11-07)
 - Secondary store link is now a BOXED BUTTON matching "Buy on Amazon" (people ignored the old

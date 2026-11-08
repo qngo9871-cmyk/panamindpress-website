@@ -16,10 +16,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-  /* secondary store button: same boxed style as .buy so it isn't overlooked */
-  .book .buy-alt{display:inline-block;margin-top:.55rem;font-family:var(--sans);font-size:.64rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink);border:1px solid var(--ink);padding:.55rem 1.05rem;transition:background .15s,color .15s;}
-  .book .buy-alt:hover{background:var(--ink);color:var(--paper);}
-  @media (max-width:640px){ .book .buy, .book .buy-alt{align-self:stretch;text-align:center;padding:.55rem .5rem;letter-spacing:.1em;} }
+  /* primary: buy the ebook direct (Payhip). Secondary stores are a quiet text line under it. */
+  .book .buy-direct{background:var(--ink);color:var(--paper);font-weight:600;padding:.7rem 1.2rem;}
+  .book .buy-direct:hover{background:var(--ink-soft);color:var(--paper);}
+  .book .also{margin:.6rem 0 0;font-family:var(--sans);font-size:.7rem;line-height:1.5;color:var(--ink-faint);}
+  .book .also a{color:var(--ink-soft);text-underline-offset:2px;}
+  .book .also a:hover{color:var(--ink);}
+  @media (max-width:640px){ .book .buy-direct{align-self:stretch;text-align:center;padding:.65rem .5rem;letter-spacing:.1em;} .book .also{text-align:center;align-self:stretch;} }
 </style>
 </head>
 <body>
@@ -53,7 +56,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2>The Catalogue</h2>
-        <p style="text-align:center;max-width:44rem;margin:0.75rem auto 0;font-style:italic;opacity:0.88;">Buy links go to Amazon, but every ebook is also available at Apple Books, Kobo, Barnes &amp; Noble and other major stores.</p>
+        <p style="text-align:center;max-width:44rem;margin:0.75rem auto 0;font-style:italic;opacity:0.88;">Buy ebooks direct from the press: an instant EPUB download that works on Kindle, Apple Books, Kobo and every e-reader. Print editions are on Amazon.</p>
       </div>
 
       <!-- ============ LINE 1: CONTEMPLATIVE NONFICTION ============ -->
@@ -67,8 +70,8 @@
             <p class="sub">A Journey Into the Hidden Universe</p>
             <p class="byline">By <a href="https://quinnpath.org/" target="_blank" rel="noopener">Quinn Path</a></p>
             <p class="formats">Kindle $8.99 &middot; Hardcover &middot; Paperback &nbsp; <span class="rating">&#9733; 4.6 (31)</span></p>
-            <a class="buy" href="https://www.amazon.com/Forty-Three-Days-Fire-Journey-Universe-ebook/dp/B0FL7WWPM6/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/mZy6PB" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/cx0Rg" target="_blank" rel="noopener">Buy the ebook &middot; $8.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Forty-Three-Days-Fire-Journey-Universe-ebook/dp/B0FL7WWPM6/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/mZy6PB" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -79,8 +82,8 @@
             <p class="sub">A Mindfulness Practice for Surfers</p>
             <p class="byline">By <a href="https://quinnpath.org/" target="_blank" rel="noopener">Quinn Path</a></p>
             <p class="formats">Kindle $3.99 &middot; Paperback</p>
-            <a class="buy" href="https://www.amazon.com/Between-Sets-Mindfulness-Practice-Surfers-ebook/dp/B0GJN4K6V7/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/meY2zz" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/jR45K" target="_blank" rel="noopener">Buy the ebook &middot; $3.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Between-Sets-Mindfulness-Practice-Surfers-ebook/dp/B0GJN4K6V7/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/meY2zz" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -91,8 +94,8 @@
             <p class="sub">A Short Introduction to Meditation</p>
             <p class="byline">By <a href="https://quinnpath.org/" target="_blank" rel="noopener">Quinn Path</a></p>
             <p class="formats">Kindle $4.99 &middot; Paperback &nbsp; <span class="rating">&#9733; 5.0 (1)</span></p>
-            <a class="buy" href="https://www.amazon.com/Learning-Pay-Attention-Introduction-Meditation-ebook/dp/B0GH15PF7P/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/bOLLWJ" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/87ByN" target="_blank" rel="noopener">Buy the ebook &middot; $4.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Learning-Pay-Attention-Introduction-Meditation-ebook/dp/B0GH15PF7P/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/bOLLWJ" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -103,8 +106,8 @@
             <p class="sub">The Simple Daily Practice That Transforms Emotional Overwhelm into Spiritual Freedom</p>
             <p class="byline">By <a href="https://quinnpath.org/" target="_blank" rel="noopener">Quinn Path</a></p>
             <p class="formats">Kindle $8.99 &middot; Hardcover &middot; Paperback &nbsp; <span class="rating">&#9733; 5.0 (2)</span><br><span class="langs">Also in &#20013;&#25991; &middot; &#26085;&#26412;&#35486; &middot; Fran&ccedil;ais &middot; Espa&ntilde;ol &middot; Deutsch</span></p>
-            <a class="buy" href="https://www.amazon.com/Morning-Coffee-Transforms-Emotional-Overwhelm-ebook/dp/B0GDLV9SWP/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/bWwa9Y" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/ePg9v" target="_blank" rel="noopener">Buy the ebook &middot; $8.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Morning-Coffee-Transforms-Emotional-Overwhelm-ebook/dp/B0GDLV9SWP/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/bWwa9Y" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -115,8 +118,8 @@
             <p class="sub">Insights from a Contemplative Life</p>
             <p class="byline">By <a href="https://quinnpath.org/" target="_blank" rel="noopener">Quinn Path</a></p>
             <p class="formats">Kindle $4.99 &middot; Paperback $13.99 &nbsp; <span class="rating">&#9733; 5.0 (1)</span></p>
-            <a class="buy" href="https://www.amazon.com/Notes-Cushion-Kitchen-Table-Contemplative-ebook/dp/B0H41K45WH/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/3LWgy1" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/GEh1T" target="_blank" rel="noopener">Buy the ebook &middot; $4.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Notes-Cushion-Kitchen-Table-Contemplative-ebook/dp/B0H41K45WH/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/3LWgy1" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -133,8 +136,8 @@
             <p class="sub">Buddhism&rsquo;s Wisdom on Dreams and the Nature of Reality</p>
             <p class="byline">By <a href="https://www.amazon.com/author/quyenngo" target="_blank" rel="noopener">Quyen Ngo</a></p>
             <p class="formats">Kindle $7.99 &middot; Hardcover &middot; Paperback &nbsp; <span class="rating">&#9733; 5.0 (1)</span></p>
-            <a class="buy" href="https://www.amazon.com/Dreaming-Mind-Buddhisms-Wisdom-Reality-ebook/dp/B0GFSF5FHD/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/ml0JoY" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/nF2WO" target="_blank" rel="noopener">Buy the ebook &middot; $7.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Dreaming-Mind-Buddhisms-Wisdom-Reality-ebook/dp/B0GFSF5FHD/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/ml0JoY" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -145,12 +148,12 @@
             <p class="sub">Dreams, Illusion, and Recognition in Tibetan Buddhism</p>
             <p class="byline">By <a href="https://www.amazon.com/author/quyenngo" target="_blank" rel="noopener">Quyen Ngo</a></p>
             <p class="formats">Kindle $7.99 &middot; Paperback</p>
-            <a class="buy" href="https://www.amazon.com/Night-Path-Illusion-Recognition-Buddhism-ebook/dp/B0GHFVTXZS/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/47aKoA" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/zjgF0" target="_blank" rel="noopener">Buy the ebook &middot; $7.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Night-Path-Illusion-Recognition-Buddhism-ebook/dp/B0GHFVTXZS/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/47aKoA" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
-        <!-- TODO Way of Insight: swap the hidden buy-alt placeholder below for the real Books2Read link once the D2D universal page exists -->
+        <!-- TODO Way of Insight: add its Books2Read link to the "also" line once the D2D universal page exists -->
         <article class="book">
           <div class="cover"><img src="covers/way-of-insight.jpg" alt="Cover of Way of Insight"></div>
           <div class="meta">
@@ -158,8 +161,8 @@
             <p class="sub">How to Meditate: A Step-by-Step Guide to Mindfulness, Concentration, and Insight Meditation, for Beginners and Beyond</p>
             <p class="byline">By <a href="https://www.amazon.com/author/quyenngo" target="_blank" rel="noopener">Quyen Ngo</a></p>
             <p class="formats">Kindle $3.99 &middot; Paperback</p>
-            <a class="buy" href="https://www.amazon.com/dp/B0H656DTQJ/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <span class="buy-alt" aria-hidden="true" style="visibility:hidden">Apple Books, Kobo &amp; more</span>
+            <a class="buy buy-direct" href="https://payhip.com/b/SEnm9" target="_blank" rel="noopener">Buy the ebook &middot; $3.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/dp/B0H656DTQJ/" target="_blank" rel="noopener">Amazon</a></p>
           </div>
         </article>
 
@@ -176,8 +179,8 @@
             <p class="sub">A Novel of Consciousness &amp; Transformation</p>
             <p class="byline">By <a href="https://www.amazon.com/author/sagekane" target="_blank" rel="noopener">Sage Kane</a></p>
             <p class="formats">Kindle $4.99 &middot; Paperback &nbsp; <span class="rating">&#9733; 4.6 (26)</span></p>
-            <a class="buy" href="https://www.amazon.com/Recognition-Novel-Consciousness-Transformation-ebook/dp/B0FRS8NFGR/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/3ylpMe" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/18rlI" target="_blank" rel="noopener">Buy the ebook &middot; $4.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Recognition-Novel-Consciousness-Transformation-ebook/dp/B0FRS8NFGR/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/3ylpMe" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 
@@ -188,8 +191,8 @@
             <p class="sub">One Man&rsquo;s Fight Against Wildlife Trafficking</p>
             <p class="byline">By <a href="https://www.amazon.com/author/sagekane" target="_blank" rel="noopener">Sage Kane</a></p>
             <p class="formats">Kindle $2.99 &middot; Paperback &nbsp; <span class="rating">&#9733; 5.0 (3)</span></p>
-            <a class="buy" href="https://www.amazon.com/Blood-Leaves-Fight-Against-WildlifeTrafficking-ebook/dp/B0GDG3GZ8J/" target="_blank" rel="noopener">Buy on Amazon</a>
-            <a class="buy-alt" href="https://books2read.com/u/b69Xoy" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a>
+            <a class="buy buy-direct" href="https://payhip.com/b/SYjw4" target="_blank" rel="noopener">Buy the ebook &middot; $2.99</a>
+            <p class="also">Or buy from <a href="https://www.amazon.com/Blood-Leaves-Fight-Against-WildlifeTrafficking-ebook/dp/B0GDG3GZ8J/" target="_blank" rel="noopener">Amazon</a> &middot; <a href="https://books2read.com/u/b69Xoy" target="_blank" rel="noopener">Apple Books, Kobo &amp; more</a></p>
           </div>
         </article>
 

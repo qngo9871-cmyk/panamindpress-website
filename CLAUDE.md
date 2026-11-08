@@ -42,6 +42,19 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-11-08)
+- DIRECT EBOOK SALES via Payhip (account qngo9871@gmail.com, store "Pana Mind Press", checkout
+  connected). All 10 books are Payhip digital products: EPUB (from ~/Books Published final Kindle
+  folders) + cover + description + "Send to Kindle" note, "Product is an ebook" (reduced EU VAT) on,
+  price = Kindle price (KDP list-price parity: never cheaper here than Kindle). None are in KDP Select.
+  Product codes: 43 Days cx0Rg, Between Sets jR45K, Learning to Pay Attention 87ByN, Morning Coffee
+  ePg9v, Notes from the Cushion GEh1T, Dreaming Mind nF2WO, Night as Path zjgF0, Way of Insight
+  SEnm9, The Recognition 18rlI, Blood & Leaves SYjw4 (https://payhip.com/b/<code>).
+- Catalogue cards: primary filled button "Buy the ebook · $X" -> Payhip; Amazon + Books2Read are a
+  quiet "Or buy from ..." text line (`.book .buy-direct` / `.book .also`, inline <style>). Catalogue
+  intro line now pitches direct EPUB purchase; print is Amazon-only. If a price changes on KDP,
+  change it in Payhip AND the button label here.
+
 ## Current State (2026-11-07)
 - Secondary store link is now a BOXED BUTTON matching "Buy on Amazon" (people ignored the old
   underlined text link). Label shortened to "Apple Books, Kobo & more" (uppercase via CSS). Styles

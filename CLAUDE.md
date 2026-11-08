@@ -42,6 +42,16 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-11-09)
+- MEDITATION APPS section added to index.html (`<section id="apps">`, between the catalogue and the
+  signup), styles in the inline <style> (`.apps`/`.app`). "Apps" link added to the primary nav on all
+  3 pages (index.html#apps). Presented as "from Pana Mind Press" with no author name (pen-name rule).
+  Card 1: Meditation Anchor (App Store id 6763665393, icon apps/meditation-anchor.png 240px from the
+  app repo). No prices on the card (subscription prices can change; "Free to download · 7-day free
+  trial" stays true). TODO comment marks where Way of Insight (app id 6832348129) goes once Apple
+  approves it, plus a "Companion app" line on the Way of Insight book card.
+  Verified via headless Chrome at 1300px and true 390px (iframe).
+
 ## Current State (2026-11-08)
 - DIRECT EBOOK SALES via Payhip (account qngo9871@gmail.com, store "Pana Mind Press", checkout
   connected). All 10 books are Payhip digital products: EPUB (from ~/Books Published final Kindle

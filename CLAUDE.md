@@ -46,7 +46,7 @@ At the end of every session, update this Current State section to reflect progre
 - DIRECT EBOOK SALES via Payhip (account qngo9871@gmail.com, store "Pana Mind Press", checkout
   connected). All 10 books are Payhip digital products: EPUB (from ~/Books Published final Kindle
   folders) + cover + description + "Send to Kindle" note, "Product is an ebook" (reduced EU VAT) on,
-  Payhip prices set by Q 11-08 (USD): 43 Days 5.99, Learning to Pay Attention 3.99, Morning Coffee 4.99, Blood & Leaves 4.99, others = Kindle price. Several are below Kindle (KDP price-match risk accepted by Q). None are in KDP Select.
+  Payhip prices set by Q 11-08 (USD): 43 Days 5.99, Learning to Pay Attention 3.99, Morning Coffee 4.99, Blood & Leaves 4.99, others = Kindle price. Several are below Kindle (KDP price-match risk accepted by Q). Card "Kindle $X" labels are US list prices; Blood & Leaves KDP US price is $3.99 (amazon.com.au shows A$5.57, AUD). Other labels not re-verified against KDP. None are in KDP Select.
   Product codes: 43 Days cx0Rg, Between Sets jR45K, Learning to Pay Attention 87ByN, Morning Coffee
   ePg9v, Notes from the Cushion GEh1T, Dreaming Mind nF2WO, Night as Path zjgF0, Way of Insight
   SEnm9, The Recognition 18rlI, Blood & Leaves SYjw4 (https://payhip.com/b/<code>).

@@ -55,6 +55,8 @@ At the end of every session, update this Current State section to reflect progre
   loaded; .shots row pinned to card bottom via align-content:space-between). Anchor shots came from
   its US App Store listing (English set isn't in the repo); Way of Insight shots from
   ~/Projects/WayOfInsight/screenshots/final/en. Picks: Anchor idle/sit/summary; WOI home/path/check-in.
+  OPEN: apps.apple.com/app/id6832348129 still 404'd on 11-10 (Apple store-page propagation lag after
+  approval). Recheck; if still 404 after a day, check app availability/territories in ASC.
   Verified via headless Chrome at 1300px and true 390px (iframe).
 
 ## Current State (2026-11-08)

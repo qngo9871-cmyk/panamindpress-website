@@ -48,8 +48,13 @@ At the end of every session, update this Current State section to reflect progre
   3 pages (index.html#apps). Presented as "from Pana Mind Press" with no author name (pen-name rule).
   Card 1: Meditation Anchor (App Store id 6763665393, icon apps/meditation-anchor.png 240px from the
   app repo). No prices on the card (subscription prices can change; "Free to download · 7-day free
-  trial" stays true). TODO comment marks where Way of Insight (app id 6832348129) goes once Apple
-  approves it, plus a "Companion app" line on the Way of Insight book card.
+  trial" stays true).
+- 2026-11-10: Card 2 Way of Insight added (app id 6832348129, approved + READY_FOR_SALE 11-10, icon
+  apps/way-of-insight.png from the app's AppIcon). Way of Insight book card got a "Companion app" line
+  linking to #apps. Each app card now shows 3 screenshots (apps/shots/*.jpg, 360px wide JPEGs, lazy
+  loaded; .shots row pinned to card bottom via align-content:space-between). Anchor shots came from
+  its US App Store listing (English set isn't in the repo); Way of Insight shots from
+  ~/Projects/WayOfInsight/screenshots/final/en. Picks: Anchor idle/sit/summary; WOI home/path/check-in.
   Verified via headless Chrome at 1300px and true 390px (iframe).
 
 ## Current State (2026-11-08)

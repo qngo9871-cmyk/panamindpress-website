@@ -182,3 +182,4 @@ At the end of every session, update this Current State section to reflect progre
   submit/page-jump; node --check the script before shipping.)
 - Email Routing LIVE (hello@ -> Gmail). Morning-coffee cover fixed (2:3).
 - HTTPS verified: Let's Encrypt cert approved, https_enforced=true, http->https. NOTHING outstanding.
+- 2026-11-16: app cards updated for the 1.1.0 releases: Meditation Anchor mentions Apple Watch heart rate, shots idle/sit/heart (ma-07-heart); Way of Insight sells the journal + heart rate, shots home/journal/heart (woi-07-journal, woi-08-heart). Shots regenerated from the apps' screenshots/ dirs (en).

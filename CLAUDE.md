@@ -42,6 +42,10 @@ press. Keep copyright footer as "Pana Mind Press", never a personal name.
 ## Instructions for Claude Code
 At the end of every session, update this Current State section to reflect progress.
 
+## Current State (2026-11-26)
+- 11th book added: Quinn Path, "One Bag to Burma" (novel), FIRST card in the Fiction line. Cover covers/one-bag-to-burma.jpg (776x1200, from Dewi's 1600x2560 ebook cover). Payhip product ucaCj at US$4.99 (= Kindle). Amazon ASIN B0GXCS44M5. Formats line shows a "New" tag instead of a rating.
+- TODO on the card: add the Books2Read link once the Draft2Digital universal page exists (D2D book id 4525288). Paperback via IngramSpark, live after Q approves the proof.
+
 ## Current State (2026-11-09)
 - MEDITATION APPS section added to index.html (`<section id="apps">`, between the catalogue and the
   signup), styles in the inline <style> (`.apps`/`.app`). "Apps" link added to the primary nav on all

@@ -44,7 +44,7 @@ At the end of every session, update this Current State section to reflect progre
 
 ## Current State (2026-11-26)
 - 11th book added: Quinn Path, "One Bag to Burma" (novel). Moved 11-26 (Q) to sit right after Notes from the Cushion at the end of the Contemplative Nonfiction line, with the other Quinn Path books, not in Fiction. Cover covers/one-bag-to-burma.jpg (776x1200, from Dewi's 1600x2560 ebook cover). Payhip product ucaCj at US$4.99 (= Kindle). Amazon ASIN B0GXCS44M5. Formats line shows a "New" tag instead of a rating.
-- TODO on the card: add the Books2Read link once the Draft2Digital universal page exists (D2D book id 4525288). Paperback via IngramSpark, live after Q approves the proof.
+- Books2Read link added 11-27: https://books2read.com/u/lKZA2q (D2D book id 4525288, D2D ISBN 9798235942660). Paperback via IngramSpark, live after Q approves the proof.
 
 ## Current State (2026-11-09)
 - MEDITATION APPS section added to index.html (`<section id="apps">`, between the catalogue and the

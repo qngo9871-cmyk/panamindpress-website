@@ -44,6 +44,7 @@ At the end of every session, update this Current State section to reflect progre
 
 ## Current State (2026-11-26)
 - 11th book added: Quinn Path, "One Bag to Burma" (novel). Moved 11-26 (Q) to sit right after Notes from the Cushion at the end of the Contemplative Nonfiction line, with the other Quinn Path books, not in Fiction. Cover covers/one-bag-to-burma.jpg (776x1200, from Dewi's 1600x2560 ebook cover). Payhip product ucaCj at US$4.99 (= Kindle). Amazon ASIN B0GXCS44M5. Formats line shows a "New" tag instead of a rating.
+- 12th book added 2026-11-28: Quinn Path, "Can You Do Dubbo Monday?: An Optometrist's Travels Around Australia" (travel novel). Card placed right after One Bag to Burma (end of Contemplative Nonfiction line, with the Quinn Path books). Cover covers/can-you-do-dubbo-monday.jpg (776x1200 from Dewi's v2 1600x2560 ebook cover). Payhip cIHFC US$4.99 (= Kindle). Books2Read e0pKAE. Amazon link NOT yet on the card: KDP submitted 11-28, add the ASIN link (amazon.com/dp/<ASIN>/) to the "also" line when live.
 - Books2Read link added 11-27: https://books2read.com/u/lKZA2q (D2D book id 4525288, D2D ISBN 9798235942660). Paperback via IngramSpark, live after Q approves the proof.
 
 ## Current State (2026-11-09)
